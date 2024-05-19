@@ -1,0 +1,48 @@
+<div class="container">
+  <mat-card *ngFor="let player of players" class="custom-card">
+    <mat-card-header class="header">
+      <mat-card-title
+        ><h1>{{ player.award }}</h1></mat-card-title
+      >
+      <mat-card-subtitle
+        ><h3>{{ player.name }}</h3></mat-card-subtitle
+      >
+    </mat-card-header>
+    <img mat-card-image [src]="player.image" alt="Player image" class="image" />
+    <mat-card-content>
+      <h5>
+        Puntos por partido:
+        <span class="numbers">{{ player.stats.points }}</span>
+      </h5>
+
+      <h5>
+        Rebotes por partido:
+        <span class="numbers">{{ player.stats.rebounds }}</span>
+      </h5>
+      <h5>
+        Asistencias por partido:
+        <span class="numbers">{{ player.stats.assists }}</span>
+      </h5>
+      <h5>
+        % tiro: <span class="numbers">{{ player.stats.shoots }}</span>
+      </h5>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!-- Falta este en el JSON: -->
+<!-- 
+  {
+    "id": 5,
+    "name": "Mike Daigneault",
+    "award": "Coach of the Year",
+    "team": "Oklahoma City Thunder",
+    "year": 2024,
+    "image": "https://cdn.nba.com/teams/uploads/sites/1610612760/2023/07/release-daigneault-230719.jpg",
+    "stats": {
+      "wins": 57,
+      "loses": 25,
+      "winningPercentage": "69.5%"
+    }
+  }, 
+-->

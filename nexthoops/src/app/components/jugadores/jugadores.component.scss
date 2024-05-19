@@ -1,0 +1,58 @@
+@import "../../../styles.scss";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(34% - 20px);
+  margin: 10px;
+  width: 500px;
+  color: $navfoot-bg;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  background-color: $navfoot-text;
+
+  .header,
+  .image,
+  mat-card-content {
+    align-self: stretch;
+  }
+
+  .header {
+    text-align: center;
+    margin: 0 auto;
+
+    h1 {
+      color: transparent;
+
+      letter-spacing: 5px;
+      font-weight: bold;
+      background-image: linear-gradient(
+        to right,
+        #462523 0,
+        #cb9b51 22%,
+        #f6e27a 45%,
+        #f6f2c0 50%,
+        #f6e27a 55%,
+        #cb9b51 78%,
+        #462523 100%
+      );
+      -webkit-background-clip: text;
+    }
+  }
+  .image {
+    padding: 20px;
+  }
+  .numbers {
+    font-size: 28px;
+  }
+}

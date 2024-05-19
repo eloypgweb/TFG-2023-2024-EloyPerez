@@ -1,0 +1,36 @@
+<div class="store">
+  <div class="store-controls">
+    <button class="store-filter-btn" (click)="toggleFilterMenu()">
+      Filtros
+    </button>
+    <select class="store-sort-select" (change)="sortShirts($event)">
+      <option value="">No ordenar</option>
+      <option value="low-to-high">Menor a mayor</option>
+      <option value="high-to-low">Mayor a menor</option>
+    </select>
+  </div>
+
+  <app-filter-menu
+    *ngIf="showFilterMenu"
+    (filtersApplied)="applyFilters($event)"
+    (close)="toggleFilterMenu()"
+  ></app-filter-menu>
+
+  <div class="store-container">
+    <div class="store-item" *ngFor="let item of filteredTienda">
+      <img
+        class="store-item-image"
+        [src]="item.image_url"
+        alt="{{ item.player }}"
+      />
+      <div class="store-item-info">
+        <h2 class="store-item-player">{{ item.player }}</h2>
+        <p class="store-item-team">{{ item.team }}</p>
+        <p class="store-item-price">{{ item.price }} €</p>
+        <button class="store-item-btn" (click)="viewShirt(item)">
+          Ver más
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

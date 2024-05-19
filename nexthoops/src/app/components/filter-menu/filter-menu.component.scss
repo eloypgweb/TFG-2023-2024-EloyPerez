@@ -1,0 +1,87 @@
+@import "../../../styles.scss";
+
+.filter-menu {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .title {
+    color: $dark;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .filter-by {
+    color: $grey-dark;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .filter-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    select,
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    select {
+      // Estilos generales para todos los selects
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+
+      option {
+        // Estilos específicos para los options dentro del select
+        padding: 20px 22px; // Ajusta el padding según sea necesario
+        margin: 5px 0; // Ajusta el margin según sea necesario
+      }
+    }
+  }
+
+  button {
+    background-color: $light;
+    color: $dark;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($light, 10%);
+    }
+  }
+}

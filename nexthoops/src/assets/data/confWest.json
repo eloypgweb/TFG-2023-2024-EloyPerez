@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Oklahoma_City_Thunder.svg/1200px-Oklahoma_City_Thunder.svg.png",
+    "team": "Oklahoma City Thunder",
+    "victorias": "57",
+    "derrotas": "25",
+    "porcentajeVictoria": "0.695"
+  },
+  {
+    "id": 2,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Denver_Nuggets.svg/1200px-Denver_Nuggets.svg.png",
+    "team": "Denver Nuggets",
+    "victorias": "57",
+    "derrotas": "25",
+    "porcentajeVictoria": "0.695"
+  },
+  {
+    "id": 3,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/c/c2/Minnesota_Timberwolves_logo.svg",
+    "team": "Minesota Timberwolves",
+    "victorias": "56",
+    "derrotas": "26",
+    "porcentajeVictoria": "0.683"
+  },
+  {
+    "id": 4,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Los_Angeles_Clippers_%282015%29.svg/1200px-Los_Angeles_Clippers_%282015%29.svg.png",
+    "team": "Los Angeles Clippers",
+    "victorias": "51",
+    "derrotas": "31",
+    "porcentajeVictoria": "0.622"
+  },
+  {
+    "id": 5,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Dallas_Mavericks_logo.svg/1200px-Dallas_Mavericks_logo.svg.png",
+    "team": "Dallas Mavericks",
+    "victorias": "50",
+    "derrotas": "32",
+    "porcentajeVictoria": "0.610"
+  },
+  {
+    "id": 6,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Phoenix_Suns_logo.svg/1200px-Phoenix_Suns_logo.svg.png",
+    "team": "Phoenix Suns",
+    "victorias": "49",
+    "derrotas": "33",
+    "porcentajeVictoria": "0.598"
+  },
+  {
+    "id": 7,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/2560px-Los_Angeles_Lakers_logo.svg.png",
+    "team": "Los Angeles Lakers",
+    "victorias": "47",
+    "derrotas": "35",
+    "porcentajeVictoria": "0.573"
+  },
+  {
+    "id": 8,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/0/0d/New_Orleans_Pelicans_logo.svg",
+    "team": "New Orleans Pelicans",
+    "victorias": "49",
+    "derrotas": "33",
+    "porcentajeVictoria": "0.598"
+  },
+  {
+    "id": 9,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/SacramentoKings.svg/800px-SacramentoKings.svg.png",
+    "team": "Sacramento Kings",
+    "victorias": "46",
+    "derrotas": "36",
+    "porcentajeVictoria": "0.561"
+  },
+  {
+    "id": 10,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/0/01/Golden_State_Warriors_logo.svg/1200px-Golden_State_Warriors_logo.svg.png",
+    "team": "Golden State Warriors",
+    "victorias": "46",
+    "derrotas": "36",
+    "porcentajeVictoria": "0.561"
+  },
+  {
+    "id": 11,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Houston-Rockets-logo.png",
+    "team": "Houston Rockets",
+    "victorias": "41",
+    "derrotas": "41",
+    "porcentajeVictoria": "0.500"
+  },
+  {
+    "id": 12,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Utah_Jazz_logo_2022.svg/1200px-Utah_Jazz_logo_2022.svg.png",
+    "team": "Utah Jazz",
+    "victorias": "27",
+    "derrotas": "55",
+    "porcentajeVictoria": "0.329"
+  },
+  {
+    "id": 13,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Memphis_Grizzlies.svg/1200px-Memphis_Grizzlies.svg.png",
+    "team": "Memphis Grizzlies",
+    "victorias": "27",
+    "derrotas": "55",
+    "porcentajeVictoria": "0.329"
+  },
+  {
+    "id": 14,
+    "icon": "https://logos-world.net/wp-content/uploads/2020/05/San-Antonio-Spurs-Logo-2017-Present.png",
+    "team": "San Antonio Spurs",
+    "victorias": "22",
+    "derrotas": "60",
+    "porcentajeVictoria": "0.268"
+  },
+  {
+    "id": 15,
+    "icon": "https://i.pinimg.com/originals/7d/07/ea/7d07eaa72e74a2def63540ac7d55ba0f.png",
+    "team": "Portland Trail Blazers",
+    "victorias": "21",
+    "derrotas": "61",
+    "porcentajeVictoria": "0.256"
+  }
+]

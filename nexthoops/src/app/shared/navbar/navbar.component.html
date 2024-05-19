@@ -1,0 +1,45 @@
+<div class="general-container">
+  <div class="elements">
+    <img
+      class="imagenLogo"
+      src="../../../assets/img/logoNba.png"
+      alt="Main Logo"
+      (click)="toHome()"
+    />
+    <div class="btns">
+      <!-- Quiero que cada icon sea un svg con la imagen sin fondo en buena calidad y color -->
+      <button class="btn" (click)="toShop()">
+        Tienda
+        <img
+          class="imgIcon"
+          src="../../../assets/icons/carrito.webp"
+          alt="Carrito"
+        />
+      </button>
+      <button class="btn" (click)="toPlayers()">
+        Jugadores
+        <img
+          class="imgIcon"
+          src="../../../assets/icons/estrella.webp"
+          alt="Carrito"
+        />
+      </button>
+      <button class="btn" (click)="toTeams()">
+        Equipos
+        <img
+          class="imgIcon"
+          src="../../../assets/icons/camBas.webp"
+          alt="Carrito"
+        />
+      </button>
+      <button class="btn" (click)="toDraft()">
+        Draft
+        <img
+          class="imgIcon"
+          src="../../../assets/icons/ball.webp"
+          alt="Carrito"
+        />
+      </button>
+    </div>
+  </div>
+</div>

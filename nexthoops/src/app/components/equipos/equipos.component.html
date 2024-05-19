@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="title">
+    <h1>
+      Si no se muestra info, es porque he cumplido el límite diario de
+      peticiones
+    </h1>
+    <h3>Tabla Clasificatoria Temporada Regular 2023-2024</h3>
+  </div>
+
+  <table class="tabla">
+    <thead class="header">
+      <tr class="filaHeader">
+        <th>Id</th>
+        <th>Icon</th>
+        <th>Nombre</th>
+        <th>Victoria</th>
+        <th>Derrota</th>
+        <th>% Victoria</th>
+      </tr>
+    </thead>
+    <tbody class="body">
+      <tr *ngFor="let east of east" class="filaBody">
+        <td>{{ east.id }}</td>
+        <td><img class="img" src="{{ east.icon }}" alt="team icon" /></td>
+        <td>{{ east.team }}</td>
+        <td>{{ east.victorias }}</td>
+        <td>{{ east.derrotas }}</td>
+        <td>{{ east.porcentajeVictoria }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr class="divider" />
+
+  <!-- Repetir lo mismo pero con la conferencia Oeste -->
+  <!-- Misma tabla, mismos estilos -->
+  <table class="tabla tabla2">
+    <thead class="header">
+      <tr class="filaHeader">
+        <th>Id</th>
+        <th>Icon</th>
+        <th>Nombre</th>
+        <th>Victoria</th>
+        <th>Derrota</th>
+        <th>% Victoria</th>
+      </tr>
+    </thead>
+    <tbody class="body">
+      <tr *ngFor="let west of west" class="filaBody">
+        <td>{{ west.id }}</td>
+        <td><img class="img" src="{{ west.icon }}" alt="team icon" /></td>
+        <td>{{ west.team }}</td>
+        <td>{{ west.victorias }}</td>
+        <td>{{ west.derrotas }}</td>
+        <td>{{ west.porcentajeVictoria }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,49 @@
+<div class="filter-menu">
+  <button class="close-btn" (click)="closeMenu()">X</button>
+  <h3 class="title">Menú de filtros</h3>
+  <div class="filter-group">
+    <label for="team" class="filter-by">Equipo:</label>
+    <select id="team" [(ngModel)]="selectedTeam">
+      <option value="">Todos</option>
+      <option *ngFor="let team of teams" [value]="team">{{ team }}</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="conference" class="filter-by">Conferencia:</label>
+    <select id="conference" [(ngModel)]="selectedConference">
+      <option value="">Todas</option>
+      <option *ngFor="let conference of conferences" [value]="conference">
+        {{ conference }}
+      </option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="material" class="filter-by">Material:</label>
+    <select id="material" [(ngModel)]="selectedMaterial">
+      <option value="">Todos</option>
+      <option *ngFor="let material of materials" [value]="material">
+        {{ material }}
+      </option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label class="filter-by">Rango de precios:</label>
+    <input
+      type="range"
+      id="priceRange"
+      min="79.99"
+      max="99.99"
+      step="0.01"
+      [(ngModel)]="priceRange.min"
+      [(ngModel)]="priceRange.max"
+    />
+    <span class="filter-by"
+      >Desde {{ priceRange.min | currency : "EUR" : "symbol" : "1.2-2" }}</span
+    >
+    <!-- <span class="filter-by"
+      >De {{ priceRange.min | currency : "EUR" : "symbol" : "1.2-2" }} a
+      {{ priceRange.max | currency : "EUR" : "symbol" : "1.2-2" }}</span
+    > -->
+  </div>
+  <button (click)="applyFilters()">Aplicar filtros</button>
+</div>

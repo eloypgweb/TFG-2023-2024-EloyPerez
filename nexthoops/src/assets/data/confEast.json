@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "icon": "https://npr.brightspotcdn.com/dims4/default/542c349/2147483647/strip/true/crop/800x889+0+0/resize/880x978!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwamc%2Ffiles%2F202009%2FBoston_Celtics.svg_.png",
+    "team": "Boston Celtics",
+    "victorias": "64",
+    "derrotas": "18",
+    "porcentajeVictoria": "0.780"
+  },
+  {
+    "id": 2,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/New_York_Knicks_logo.svg/1200px-New_York_Knicks_logo.svg.png",
+    "team": "New York Knicks",
+    "victorias": "50",
+    "derrotas": "32",
+    "porcentajeVictoria": "0.610"
+  },
+  {
+    "id": 3,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/1200px-Milwaukee_Bucks_logo.svg.png",
+    "team": "Milwaukee Bucks",
+    "victorias": "49",
+    "derrotas": "33",
+    "porcentajeVictoria": "0.598"
+  },
+  {
+    "id": 4,
+    "icon": "https://seeklogo.com/images/C/cleveland-cavaliers-logo-6D6834E042-seeklogo.com.png",
+    "team": "Cleaveland Cavaliers",
+    "victorias": "48",
+    "derrotas": "34",
+    "porcentajeVictoria": "0.585"
+  },
+  {
+    "id": 5,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Orlando_Magic_logo.svg/1200px-Orlando_Magic_logo.svg.png",
+    "team": "Orlando Magic",
+    "victorias": "47",
+    "derrotas": "35",
+    "porcentajeVictoria": "0.573"
+  },
+  {
+    "id": 6,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Indiana_Pacers.svg/1200px-Indiana_Pacers.svg.png",
+    "team": "Indiana Pacers",
+    "victorias": "47",
+    "derrotas": "35",
+    "porcentajeVictoria": "0.573"
+  },
+  {
+    "id": 7,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Philadelphia_76ers_logo.svg/1200px-Philadelphia_76ers_logo.svg.png",
+    "team": "Philadelphia 76ers",
+    "victorias": "47",
+    "derrotas": "35",
+    "porcentajeVictoria": "0.573"
+  },
+  {
+    "id": 8,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/1200px-Miami_Heat_logo.svg.png",
+    "team": "Miami Heat",
+    "victorias": "46",
+    "derrotas": "36",
+    "porcentajeVictoria": "0.561"
+  },
+  {
+    "id": 9,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/1200px-Chicago_Bulls_logo.svg.png",
+    "team": "Chicago Bulls",
+    "victorias": "39",
+    "derrotas": "43",
+    "porcentajeVictoria": "0.476"
+  },
+  {
+    "id": 10,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Atlanta_Hawks_logo.svg/1200px-Atlanta_Hawks_logo.svg.png",
+    "team": "Atlanta Hawks",
+    "victorias": "36",
+    "derrotas": "46",
+    "porcentajeVictoria": "0.439"
+  },
+  {
+    "id": 11,
+    "icon": "https://seeklogo.com/images/B/brooklyn-nets-logo-CBE7DF14E6-seeklogo.com.png",
+    "team": "Brooklyn Nets",
+    "victorias": "32",
+    "derrotas": "50",
+    "porcentajeVictoria": "0.390"
+  },
+  {
+    "id": 12,
+    "icon": "https://i.pinimg.com/originals/0d/50/21/0d50218ea765be79bde207bbba23af13.png",
+    "team": "Toronto Raptors",
+    "victorias": "25",
+    "derrotas": "57",
+    "porcentajeVictoria": "0.305"
+  },
+  {
+    "id": 13,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Charlotte_Hornets_%282014%29.svg/1200px-Charlotte_Hornets_%282014%29.svg.png",
+    "team": "Charlotte Hornets",
+    "victorias": "21",
+    "derrotas": "61",
+    "porcentajeVictoria": "0.256"
+  },
+  {
+    "id": 14,
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Washington_Wizards_logo.svg/1200px-Washington_Wizards_logo.svg.png",
+    "team": "Whashington Wizards",
+    "victorias": "15",
+    "derrotas": "67",
+    "porcentajeVictoria": "0.183"
+  },
+  {
+    "id": 15,
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/3/39/Logo_of_the_Detroit_Pistons.png",
+    "team": "Detroit Pistons",
+    "victorias": "14",
+    "derrotas": "68",
+    "porcentajeVictoria": "0.171"
+  }
+]
