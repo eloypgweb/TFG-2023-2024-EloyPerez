@@ -1,10 +1,183 @@
-<div class="general-container">
-  <!-- <div class="images">
-    <img class="img" [src]="images[currentImageIndex]" alt="" />
-  </div> -->
-  <h2>
-    Mirar tema de autoslides images, ya que al poner OnInit o AfterViewInit, se
-    tira cargando la pestaña infinitamente
-  </h2>
-  <p>AfterNextRender o algo de eso</p>
+<div class="dark">
+  <section class="section-banner">
+    <img
+      src="https://i.pinimg.com/originals/dc/f8/8d/dcf88d124e6f65326208eda0ae7928bc.jpg"
+      alt="Jugador de la NBA"
+      width="1920"
+      height="1080"
+      class="background-image"
+      style="aspect-ratio: 1920 / 1080; object-fit: cover"
+    />
+    <div class="container">
+      <div class="content">
+        <h1 class="title">
+          Bienvenido a la página de fans definitiva de la NBA
+        </h1>
+        <p class="subtitle">
+          Sumerge en el mundo del baloncesto profesional con nuestra experiencia
+          integral de fans.
+        </p>
+        <div>
+          <a class="button-primary" routerLink="/login"> Únete Ahora </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-cards">
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <div class="card-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <path
+                d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"
+              ></path>
+              <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+            </svg>
+            <h3 class="card-title">Clasificación Temporada Regular</h3>
+            <p class="card-description">
+              Manténte al día con las clasificaciones y resultados de la
+              temporada regular de la NBA. Busca a tu equipo favorito y mira en
+              qué posición se encuentra.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <line x1="12" x2="12" y1="20" y2="10"></line>
+              <line x1="18" x2="18" y1="20" y2="4"></line>
+              <line x1="6" x2="6" y1="20" y2="16"></line>
+            </svg>
+            <h3 class="card-title">Mejores Jugadores</h3>
+            <p class="card-description">
+              Descubre quienes han sido los jugadores más destacados de la NBA.
+              ¿A quién se le habrán entregado los premios este año?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon"
+            >
+              <path
+                d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"
+              ></path>
+              <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+              <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path>
+              <path d="M2 7h20"></path>
+              <path
+                d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7"
+              ></path>
+            </svg>
+            <h3 class="card-title">Nuestra Tienda</h3>
+            <p class="card-description">
+              Echa un vistazo a nuestra colección de productos oficiales de la
+              NBA. ¡Consigue tu merchandising favorito hoy!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-about">
+    <div class="container">
+      <div class="grid-two-columns">
+        <div class="about-content">
+          <div class="text-content">
+            <h2 class="about-title">
+              Acerca de Nuestra Página de Fans de la NBA
+            </h2>
+            <p class="about-description">
+              Nuestra página de fans de la NBA está dedicada a brindar la
+              experiencia de fans definitiva para los entusiastas del
+              baloncesto. Nos esforzamos por ofrecer las últimas noticias,
+              resúmenes, estadísticas de jugadores y una comunidad vibrante para
+              que los fans se conecten y discutan el deporte que aman.
+            </p>
+          </div>
+          <div class="button-group">
+            <a class="button-primary" routerLink="/equipos">
+              Temporada Regular</a
+            >
+            <a class="button-secondary" href="#contacta"> Contáctanos </a>
+          </div>
+        </div>
+        <img
+          src="https://www.gigantes.com/wp-content/uploads/2023/10/F9swUTcWkAAVn2J.jpg"
+          alt="Cancha de la NBA"
+          width="550"
+          height="310"
+          class="about-image"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section-roadmap" id="contacta">
+    <div class="container">
+      <div class="grid">
+        <div class="card contact-us">
+          <div class="card-content">
+            <h3 class="card-title">Contáctanos</h3>
+            <p class="card-description">
+              ¿Tienes algún comentario o consulta? ¡Háznoslo saber!
+            </p>
+          </div>
+          <div class="card-details">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" placeholder="Eloy Pérez" />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input id="email" placeholder="eloy@gmail.com" type="email" />
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea
+                  id="message"
+                  placeholder="Escribe un mensaje..."
+                ></textarea>
+              </div>
+              <button type="submit" class="button-submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

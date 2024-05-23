@@ -7,8 +7,10 @@ $navfoot-bg-inverted: #585858;
 $navfoot-text-inverted: #e2dddd;
 
 // Logo & icons
-$logo-color-blue: #006ab6;
-$logo-color-red: #da1a32;
+$logo-color-blue: #6366f1;
+$logo-color-blue-hover: #4f46e5;
+$logo-color-red: #f87171;
+$logo-color-red-hover: #ef4444;
 $logo-color-white: #ffffff;
 
 // General
@@ -30,5 +32,6 @@ body {
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
+  color-scheme: light;
 }

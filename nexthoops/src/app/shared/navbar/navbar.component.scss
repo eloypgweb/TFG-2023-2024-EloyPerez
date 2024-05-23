@@ -13,40 +13,28 @@
     align-items: center;
     justify-content: space-between;
     .imagenLogo {
-      height: 100px;
+      height: 80px;
       margin-left: 20px;
       cursor: pointer;
     }
 
-    .btns {
+    .redirects {
       display: flex;
-      justify-content: space-between; /* Opcional: para distribuir el espacio de manera uniforme entre los botones */
+      margin: 10px;
 
-      .btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 5px 10px 5px 10px;
-        background-color: $logo-color-white;
-        border: none;
-        border-radius: 10px;
-        font-size: 24px;
-        .imgIcon {
-          width: 30px;
-          height: 30px;
-          margin-left: 5px;
+      .redi {
+        margin: 20px;
+        border-bottom: 2px solid $dark;
+        padding: 10px;
+        a {
+          color: $light;
+          text-decoration: none;
         }
-        border: 1px solid $navfoot-bg;
-        // transition: background-color 0.8s ease; /* Opcional: para una transición suave */
-        // transition: color 0.5s ease; /* Opcional: para una transición suave */
-
         &:hover {
-          background-color: $logo-color-blue; /* Cambia esto al color que quieras cuando se pasa el mouse sobre el botón */
-          border: 1px solid $logo-color-red; /* Opcional: para un borde al pasar el mouse sobre el botón */
-          color: $navfoot-text-inverted;
+          border-bottom: 2px solid #6366f1;
+          a {
+            color: #6366f1;
+          }
         }
       }
     }

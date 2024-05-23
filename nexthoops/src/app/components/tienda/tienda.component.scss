@@ -120,13 +120,13 @@
   color: $light;
   padding: 13px 17px; // Aumenta el padding para hacer el botón más grande
   font-size: 16px; // Aumenta el tamaño de la fuente para hacer el texto más grande
-  border: 1px solid $logo-color-blue;
+  border: 0.2px solid $logo-color-blue;
   border-radius: 6px;
   cursor: pointer;
   margin-top: 10px;
   transition: background-color 0.3s;
   &:hover {
-    background-color: darken($logo-color-red, 10%);
-    border: 1px solid darken($logo-color-blue, 10%);
+    background-color: $logo-color-blue-hover;
+    border: 0.2px solid $logo-color-blue-hover;
   }
 }

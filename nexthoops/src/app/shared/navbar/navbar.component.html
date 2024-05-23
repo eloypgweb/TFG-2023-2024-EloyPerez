@@ -2,12 +2,29 @@
   <div class="elements">
     <img
       class="imagenLogo"
-      src="../../../assets/img/logoNba.png"
+      src="../../../assets/icons/NextHoopsLogo.png"
       alt="Main Logo"
       (click)="toHome()"
     />
-    <div class="btns">
-      <!-- Quiero que cada icon sea un svg con la imagen sin fondo en buena calidad y color -->
+    <div class="redirects">
+      <div class="redi">
+        <a routerLink="/">Inicio</a>
+      </div>
+      <div class="redi">
+        <a routerLink="/tienda">Tienda</a>
+      </div>
+      <div class="redi">
+        <a routerLink="/jugadores">Jugadores</a>
+      </div>
+      <div class="redi">
+        <a routerLink="/equipos">Equipos</a>
+      </div>
+      <div class="redi">
+        <a routerLink="/draft">Draft</a>
+      </div>
+    </div>
+    <!-- <div class="btns">
+      
       <button class="btn" (click)="toShop()">
         Tienda
         <img
@@ -40,6 +57,6 @@
           alt="Carrito"
         />
       </button>
-    </div>
+    </div> -->
   </div>
 </div>
