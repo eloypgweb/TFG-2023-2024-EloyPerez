@@ -15,7 +15,7 @@ export class FilterMenuComponent implements OnInit {
   @Output() close = new EventEmitter<void>();
 
   selectedTeam: string = '';
-  priceRange = { min: 0, max: 1000 };
+  priceRange = { min: 0, max: 99.99 };
   selectedConference: string = '';
   selectedMaterial: string = '';
 

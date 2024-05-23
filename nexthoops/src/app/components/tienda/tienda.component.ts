@@ -55,7 +55,7 @@ export class TiendaComponent implements OnInit {
       this.tienda.sort((a, b) => a.price - b.price);
     } else if (sortOrder === 'high-to-low') {
       this.tienda.sort((a, b) => b.price - a.price);
-    } else {
+    } else if (sortOrder === 'no-sort') {
       this.tienda = [...this.originalTienda]; // Restablecemos la lista original
     }
   }

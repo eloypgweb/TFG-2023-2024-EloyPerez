@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { authGuard } from './shared/auth.guard';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -40,6 +41,14 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./components/ver-mas/ver-mas.component').then(
         (m) => m.VerMasComponent
+      ),
+    canActivate: [authGuard], // Añadir esta línea
+  },
+  {
+    path: 'login',
+    loadComponent: () =>
+      import('./components/login/login.component').then(
+        (h) => h.LoginComponent
       ),
   },
   {

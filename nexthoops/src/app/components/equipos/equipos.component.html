@@ -7,7 +7,15 @@
     <h3>Tabla Clasificatoria Temporada Regular 2023-2024</h3>
   </div>
 
-  <table class="tabla">
+  <div class="filter">
+    <label for="conferenceSelect">Tabla de Conferencia: </label>
+    <select id="conferenceSelect" [(ngModel)]="selectedConference">
+      <option value="east">Este</option>
+      <option value="west">Oeste</option>
+    </select>
+  </div>
+
+  <table class="tabla" *ngIf="selectedConference === 'east'">
     <thead class="header">
       <tr class="filaHeader">
         <th>Id</th>
@@ -30,11 +38,7 @@
     </tbody>
   </table>
 
-  <hr class="divider" />
-
-  <!-- Repetir lo mismo pero con la conferencia Oeste -->
-  <!-- Misma tabla, mismos estilos -->
-  <table class="tabla tabla2">
+  <table class="tabla tabla2" *ngIf="selectedConference === 'west'">
     <thead class="header">
       <tr class="filaHeader">
         <th>Id</th>

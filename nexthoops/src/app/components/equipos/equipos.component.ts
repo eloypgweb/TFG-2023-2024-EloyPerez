@@ -1,18 +1,20 @@
 import { Component } from '@angular/core';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 
 // Servicios
 import { EastConferenceService } from '../../services/east-conference.service';
 import { WestConferenceService } from '../../services/west-conference.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-equipos',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf, FormsModule],
   templateUrl: './equipos.component.html',
   styleUrl: './equipos.component.scss',
 })
 export class EquiposComponent {
+  selectedConference: string = 'east';
   east: any[] = [];
   west: any[] = [];
 
