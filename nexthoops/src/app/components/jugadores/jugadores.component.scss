@@ -16,61 +16,69 @@
   margin-top: -40px;
 }
 
-.custom-card {
-  margin: 0 auto;
-  width: 550px;
-  height: 950px;
-  color: $navfoot-bg;
-  margin-top: 20px;
-  margin-bottom: 80px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-  background-color: $navfoot-text;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  .header,
-  .image,
-  mat-card-content {
-    align-self: stretch;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .header {
-    text-align: center;
+  .custom-card {
     margin: 0 auto;
+    width: calc(
+      33.33% - 20px
+    ); // Restamos 20px para tener en cuenta los márgenes
+    height: 950px;
+    color: $navfoot-bg;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    background-color: $navfoot-text;
 
-    h1 {
-      color: transparent;
-      letter-spacing: 5px;
-      font-weight: bold;
-      background-image: linear-gradient(
-        to right,
-        #462523 0,
-        #cb9b51 22%,
-        #f6e27a 45%,
-        #f6f2c0 50%,
-        #f6e27a 55%,
-        #cb9b51 78%,
-        #462523 100%
-      );
-      -webkit-background-clip: text;
+    .header,
+    .image,
+    mat-card-content {
+      align-self: stretch;
+      text-align: center;
+      padding: 10px;
     }
-  }
 
-  .image {
-    padding: 20px;
-    border-bottom: 1px solid black;
-    padding-bottom: 0;
-  }
+    .header {
+      text-align: center;
+      margin: 0 auto;
 
-  .big-numbers {
-    margin: 2px;
-  }
+      h1 {
+        color: transparent;
+        letter-spacing: 5px;
+        font-weight: bold;
+        background-image: linear-gradient(
+          to right,
+          #462523 0,
+          #cb9b51 22%,
+          #f6e27a 45%,
+          #f6f2c0 50%,
+          #f6e27a 55%,
+          #cb9b51 78%,
+          #462523 100%
+        );
+        -webkit-background-clip: text;
+      }
+    }
 
-  .numbers {
-    font-size: 28px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    .image {
+      padding: 20px;
+      border-bottom: 1px solid black;
+      padding-bottom: 0;
+    }
+
+    .big-numbers {
+      margin: 2px;
+    }
+
+    .numbers {
+      font-size: 28px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
   }
 }

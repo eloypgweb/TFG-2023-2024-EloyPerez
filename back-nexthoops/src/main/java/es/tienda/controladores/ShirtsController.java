@@ -17,6 +17,7 @@ public class ShirtsController {
     @Autowired
     ShirtsRepository shirts;
 
+    @CrossOrigin(origins = "*")
     @GetMapping("/todos")
     public List<Shirt> todos() {
         return shirts.findAllShirts();

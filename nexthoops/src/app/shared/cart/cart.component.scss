@@ -1,0 +1,134 @@
+@import "../../../styles.scss";
+
+.container {
+  padding: 50px;
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  .infos {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    .products,
+    .amounts {
+      background-color: $light;
+      color: $dark;
+      flex: 1 1 48%;
+      min-height: 350px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      .img-title {
+        width: 63%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .product-img {
+          width: 70px;
+          height: 70px;
+          border-radius: 25%;
+        }
+
+        .product-title {
+          font-size: 15px;
+          font-weight: 700;
+          margin: 0;
+        }
+
+        .product-size {
+          font-size: 12px;
+          color: $grey-medium;
+        }
+      }
+
+      .quantity {
+        width: 10%;
+        display: flex;
+        align-items: center;
+        gap: 10px; // Espaciado horizontal entre íconos y el número
+        margin: 0 20px;
+        color: $grey-medium;
+        text-align: center;
+
+        .icons {
+          cursor: pointer;
+        }
+
+        .minus-icon,
+        .plus-icon {
+          font-size: 1rem;
+        }
+
+        .conjunto {
+          display: flex;
+        }
+      }
+
+      .price {
+        width: 20%;
+        align-self: center;
+        text-align: center;
+      }
+
+      .trash-icon {
+        width: 5%;
+        cursor: pointer;
+        color: $logo-color-red;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+
+    .subtotal,
+    .shipping,
+    .total {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+    }
+
+    .text {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .price {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .total {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .total-price {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0;
+    }
+  }
+}

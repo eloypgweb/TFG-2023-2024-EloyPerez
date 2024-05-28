@@ -30,9 +30,23 @@
           color: $light;
           text-decoration: none;
         }
+        .btn-log {
+          background-color: $dark;
+          color: $light;
+          border: none;
+
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          font-size: 22px;
+          &:hover {
+            color: #6366f1;
+          }
+        }
         &:hover {
           border-bottom: 2px solid #6366f1;
-          a {
+          a,
+          button {
             color: #6366f1;
           }
         }

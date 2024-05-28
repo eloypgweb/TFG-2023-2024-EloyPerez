@@ -30,19 +30,12 @@ export const routes: Routes = [
       ),
   },
   {
-    path: 'draft',
-    loadComponent: () =>
-      import('./components/draft/draft.component').then(
-        (h) => h.DraftComponent
-      ),
-  },
-  {
     path: 'tienda/:id',
     loadComponent: () =>
       import('./components/ver-mas/ver-mas.component').then(
         (m) => m.VerMasComponent
       ),
-    canActivate: [authGuard], // Añadir esta línea
+    canActivate: [authGuard],
   },
   {
     path: 'login',
@@ -50,6 +43,12 @@ export const routes: Routes = [
       import('./components/login/login.component').then(
         (h) => h.LoginComponent
       ),
+  },
+  {
+    path: 'cart',
+    loadComponent: () =>
+      import('./shared/cart/cart.component').then((h) => h.CartComponent),
+    canActivate: [authGuard],
   },
   {
     path: '**',

@@ -1,24 +1,35 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  constructor() {}
+  private get token(): string | null {
+    return localStorage.getItem('authToken');
+  }
+
+  private set token(value: string | null) {
+    if (value === null) {
+      localStorage.removeItem('authToken');
+    } else {
+      localStorage.setItem('authToken', value);
+    }
+  }
 
   isLoggedIn(): boolean {
-    return !!localStorage.getItem('token'); // Verifica si hay un token en el almacenamiento local
+    return !!this.token;
   }
 
   login(username: string, password: string): boolean {
     if (username === 'user' && password === '123') {
-      localStorage.setItem('token', 'sesion-iniciada'); // Almacena un token simulado en el almacenamiento local
+      this.token = 'sesion-iniciada';
       return true;
     }
     return false;
   }
 
   logout(): void {
-    localStorage.removeItem('token'); // Elimina el token del almacenamiento local
+    this.token = null;
   }
 }

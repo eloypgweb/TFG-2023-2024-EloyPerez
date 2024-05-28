@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="title"><h2>Carrito de Compra</h2></div>
+
+  <div class="infos">
+    <div class="products">
+      <h3>Productos</h3>
+      <div class="product" *ngFor="let product of cartProducts; let i = index">
+        <div class="img-title">
+          <img src="{{ product.image }}" alt="" class="product-img" />
+          <div>
+            <h4 class="product-title">Camiseta {{ product.player }}</h4>
+            <span class="product-size">Talla: {{ product.size }}</span>
+          </div>
+        </div>
+
+        <div class="quantity">
+          <span class="conjunto">
+            <div class="icons" (click)="minus(i)">
+              <ng-icon name="bootstrapDash" class="minus-icon"></ng-icon>
+            </div>
+            {{ product.quantity }}
+            <div class="icons" (click)="plus(i)">
+              <ng-icon name="bootstrapPlus" class="plus-icon"></ng-icon>
+            </div>
+          </span>
+        </div>
+        <span class="price"
+          >{{ product.quantity * product.price | money }} €</span
+        >
+        <div class="trash-icon" (click)="clearProduct(i)">
+          <ng-icon name="bootstrapTrash3"></ng-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="amounts">
+      <h3>Resumen</h3>
+      <div class="subtotal">
+        <h4 class="text">Subtotal</h4>
+        <span class="price">{{ subtotal }} €</span>
+      </div>
+      <div class="shipping">
+        <h4 class="text">Envío</h4>
+        <span class="price">{{ shipping }} €</span>
+      </div>
+      <hr />
+      <div class="total">
+        <h4 class="text">Total</h4>
+        <span class="total-price">{{ subtotal + shipping | money }} €</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'filterShirts',
-  standalone: true,
+  pure: true,
 })
 export class FilterShirtsPipe implements PipeTransform {
   transform(shirts: any[], filters: any): any[] {

@@ -1,7 +1,246 @@
 <div class="generalContainer">
+  <div class="container">
+    <div class="product-images">
+      <div class="main-image">
+        <img
+          src="{{ shirt?.image_url }}"
+          alt="Product Image"
+          width="600"
+          height="900"
+        />
+      </div>
+    </div>
+    <div class="product-details">
+      <div class="details">
+        <h1>Camiseta {{ shirt?.player }}</h1>
+        <h1 class="price">{{ shirt?.price }}€</h1>
+        <p>Camiseta del jugador de {{ shirt?.team }}, {{ shirt?.player }}</p>
+        <div class="details-verified">
+          <p>
+            <ng-icon name="bootstrapCheckCircleFill" class="icon"></ng-icon>
+            {{ shirt?.description }}
+          </p>
+        </div>
+
+        <div class="stock">
+          <p>
+            Stock: <label>{{ shirt?.stock }}</label>
+          </p>
+        </div>
+
+        <div class="rating">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <form class="product-form">
+        <div class="form-group">
+          <label for="color">Color</label>
+          <div id="color" class="color-options">
+            <label class="btn btn-primary" for="color-default">
+              <input
+                type="radio"
+                name="color"
+                value="default"
+                id="color-default"
+                checked
+              />
+              Predeterminado
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="size">Talla</label>
+          <div id="size" class="size-options">
+            <label class="btn btn-primary" for="size-xs">
+              <input type="radio" name="size" value="XS" id="size-xs" />
+              XS
+            </label>
+            <label class="btn btn-primary" for="size-s">
+              <input type="radio" name="size" value="S" id="size-s" />
+              S
+            </label>
+            <label class="btn btn-primary" for="size-m">
+              <input type="radio" name="size" value="M" id="size-m" checked />
+              M
+            </label>
+            <label class="btn btn-primary" for="size-l">
+              <input type="radio" name="size" value="L" id="size-l" />
+              L
+            </label>
+            <label class="btn btn-primary" for="size-xl">
+              <input type="radio" name="size" value="XL" id="size-xl" />
+              XL
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Cantidad</label>
+
+          <select id="quantity" class="quantity-select">
+            <option value="1" selected class="quantity-option">1</option>
+            <option value="2" class="quantity-option">2</option>
+            <option value="3" class="quantity-option">3</option>
+            <option value="4" class="quantity-option">4</option>
+            <option value="5" class="quantity-option">5</option>
+          </select>
+        </div>
+        <button type="submit" class="add-to-cart" (click)="addToCart($event)">
+          Añadir al carrito
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="product-info">
+      <div class="product-details">
+        <h2>Detalles del producto</h2>
+        <p>
+          Esta camiseta es del jugador del equipo {{ shirt?.team }},
+          {{ shirt?.player }}, en la conferencia {{ shirt?.conference }}.
+        </p>
+        <p>Realizada con {{ shirt?.material }}</p>
+        <p>
+          Cuidados: Lavar a máquina en agua fría, secar en secadora a baja
+          temperatura.
+        </p>
+      </div>
+      <div class="reviews">
+        <h2>Reseñas</h2>
+        <div class="review">
+          <span class="user-avatar">
+            <img
+              alt="@shadcn"
+              src="https://imgs.search.brave.com/D4DHDNonVqgsZgFPBW0tQHkIzf6msCE-57-YfECcGfU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbi1pY29ucy5j/b20vaWNvbnMyLzE4/NzkvUE5HLzk2L2lj/b25maW5kZXItOC1h/dmF0YXItMjc1NDU4/M18xMjA1MTUucG5n"
+            />
+          </span>
+          <div class="review-content">
+            <div class="review-header">
+              <h3>Jhonny Walker</h3>
+              <time>Hace 2 días</time>
+            </div>
+            <div class="rating">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                ></polygon>
+              </svg>
+            </div>
+            <p>
+              Me encanta la camiseta! Es muy cómoda y el material es de alta
+              calidad. Definitivamente compraré más de otros jugadores.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br /><br />
+  <hr />
+  <br />
+
   <h1>Detalles de la Camiseta</h1>
   <p>ID de la Camiseta: {{ shirt?.id }}</p>
   <p>Nombre del Jugador: {{ shirt?.player }}</p>
   <p>Equipo: {{ shirt?.team }}</p>
   <p>Precio: €{{ shirt?.price }}</p>
+  <p>Conferencia: {{ shirt?.conference }}</p>
+  <p>Stock: {{ shirt?.stock }}</p>
+  <p>Material: {{ shirt?.material }}</p>
+  <p>Descripcion: {{ shirt?.description }}</p>
 </div>

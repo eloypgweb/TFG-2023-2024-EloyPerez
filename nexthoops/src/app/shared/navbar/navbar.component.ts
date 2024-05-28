@@ -2,6 +2,10 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Router } from '@angular/router';
+import { NgIf } from '@angular/common';
+
+// Servicios
+import { AuthService } from '../../services/auth.service';
 
 // Iconos
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
@@ -17,7 +21,7 @@ import {
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgIconComponent, RouterLink],
+  imports: [NgIconComponent, RouterLink, NgIf],
   viewProviders: [
     provideIcons({
       bootstrapCart4,
@@ -32,9 +36,21 @@ import {
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
   ngOnInit() {}
+
+  isLoggedIn() {
+    return this.authService.isLoggedIn();
+  }
+
+  logIn() {
+    this.router.navigate(['/login']);
+  }
+
+  logOut() {
+    this.authService.logout();
+  }
 
   toHome() {
     console.log('A home');
@@ -54,10 +70,5 @@ export class NavbarComponent {
   toTeams() {
     console.log('A equipos');
     this.router.navigate(['/equipos']);
-  }
-
-  toDraft() {
-    console.log('A draft');
-    this.router.navigate(['/draft']);
   }
 }

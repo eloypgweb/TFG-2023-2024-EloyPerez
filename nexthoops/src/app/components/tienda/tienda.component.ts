@@ -43,6 +43,7 @@ export class TiendaComponent implements OnInit {
   viewShirt(shirt: any) {
     this.shirtService.selectShirt(shirt);
     this.router.navigate(['/tienda', shirt.id]);
+    window.scrollTo(0, 0);
   }
 
   toggleFilterMenu() {

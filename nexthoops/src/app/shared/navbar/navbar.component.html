@@ -19,8 +19,16 @@
       <div class="redi">
         <a routerLink="/equipos">Equipos</a>
       </div>
+      <div *ngIf="isLoggedIn()" class="redi">
+        <a routerLink="/cart">Carrito</a>
+      </div>
       <div class="redi">
-        <a routerLink="/draft">Draft</a>
+        <button *ngIf="!isLoggedIn()" (click)="logIn()" class="btn-log">
+          LogIn
+        </button>
+        <button *ngIf="isLoggedIn()" (click)="logOut()" class="btn-log">
+          LogOut
+        </button>
       </div>
     </div>
     <!-- <div class="btns">
