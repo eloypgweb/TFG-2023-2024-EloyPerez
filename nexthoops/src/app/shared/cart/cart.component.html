@@ -48,6 +48,9 @@
         <h4 class="text">Total</h4>
         <span class="total-price">{{ subtotal + shipping | money }} €</span>
       </div>
+      <div class="pay-btn" (click)="shop()">
+        <button class="btn">Comprar productos</button>
+      </div>
     </div>
   </div>
 </div>

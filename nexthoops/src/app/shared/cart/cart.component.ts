@@ -86,4 +86,15 @@ export class CartComponent {
     // Actualiza los productos del carrito en el componente
     this.getCartProducts();
   }
+
+  shop() {
+    // Elimina todos los productos del carrito
+    // localStorage.removeItem('cartItems');
+
+    // Actualiza los productos del carrito en el componente
+    this.getCartProducts();
+
+    // Muestra un modal con un mensaje
+    window.alert('Función de pago no disponible...por el momento');
+  }
 }
